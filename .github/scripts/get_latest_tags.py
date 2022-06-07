@@ -8,7 +8,7 @@ import subprocess
 import sys
 from typing import Literal
 
-Repo = Literal["frappe", "erpnext"]
+Repo = Literal["z1n-frappe", "z1n-erpnext"]
 MajorVersion = Literal["12", "13", "14", "develop"]
 
 
@@ -23,7 +23,7 @@ def get_latest_tag(repo: Repo, version: MajorVersion) -> str:
             "--refs",
             "--tags",
             "--sort=v:refname",
-            f"https://github.com/frappe/{repo}",
+            f"https://github.com/ZirrusOne/{repo}",
             str(regex),
         ),
         encoding="UTF-8",
