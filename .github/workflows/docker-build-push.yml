@@ -46,6 +46,8 @@ jobs:
         with:
           push: true
         env:
+          FRAPPE_VERSION: z1n-develop
+          ERPNEXT_VERSION: z1n
           REGISTRY_USER: localhost:5000/frappe
 
       - name: Setup Python
