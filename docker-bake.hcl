@@ -60,7 +60,7 @@ function "tag" {
     params = [repo, version]
     result = [
       # If `version` param is develop (development build) then use tag `latest`
-      "${version}" == "develop" ? "${REGISTRY_USER}/${repo}:latest" : "${REGISTRY_USER}/${repo}:${version}",
+      "${version}" == "z1n-develop" ? "${REGISTRY_USER}/${repo}:latest" : "${REGISTRY_USER}/${repo}:${version}",
       # Make short tag for major version if possible. For example, from v13.16.0 make v13.
       can(regex("(v[0-9]+)[.]", "${version}")) ? "${REGISTRY_USER}/${repo}:${regex("(v[0-9]+)[.]", "${version}")[0]}" : "",
     ]
