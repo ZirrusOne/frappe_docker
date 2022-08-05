@@ -6,11 +6,11 @@ variable "REGISTRY_USER" {
 }
 
 variable "FRAPPE_VERSION" {
-    default = "develop"
+    default = "z1n-develop"
 }
 
 variable "ERPNEXT_VERSION" {
-    default = "develop"
+    default = "z1n"
 }
 
 variable "FRAPPE_REPO" {
