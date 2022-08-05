@@ -29,5 +29,5 @@ jobs:
       version: develop
       push: ${{ github.repository == 'ZirrusOne/frappe_docker' && github.event_name != 'pull_request' }}
     secrets:
-      AWS-ACCESS-KEY-ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-      AWS-SECRET-ACCESS-KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
